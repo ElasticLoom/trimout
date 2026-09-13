@@ -7,6 +7,10 @@ updates:
     groups:
       go-deps:
         patterns: ["*"]
+    ignore:
+      # v1.46.2+ requires Go 1.25; we still support Go 1.24
+      - dependency-name: modernc.org/sqlite
+        versions: [">= 1.46.2"]
   - package-ecosystem: github-actions
     directory: /
     schedule:

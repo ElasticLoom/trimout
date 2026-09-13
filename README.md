@@ -2,7 +2,7 @@
 
 Run commands once, cache the full output, and send only the useful parts to your LLM.
 
-`trimout` cuts token usage by **80–96%** by filtering noisy command output down to the lines that matter — while keeping the full original output in a local cache so you can re-query it later without rerunning the command.
+`trimout` cuts token usage by filtering noisy command output down to the lines that matter — while keeping the full original output in a local cache so you can re-query it later without rerunning the command.
 
 ```bash
 trimout run --ends 30 --strip-ansi -- make
@@ -60,7 +60,7 @@ This makes `trimout` ideal for:
 ## Install
 
 ```bash
-go install github.com/jamesgol/trimout@latest
+go install github.com/ElasticLoom/trimout@latest
 ```
 
 Or build from source:
